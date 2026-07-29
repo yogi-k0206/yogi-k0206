@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh K - Resume</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #ff9800;
+    }
+    header nav {
+      margin-top: 15px;
+    }
+    header nav a {
+      color: #ff9800;
+      margin: 0 12px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #00e7b1;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    section h2 {
+      border-bottom: 2px solid #ff9800;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #ff9800;
+    }
+
+    /* ===== Skills ===== */
+    .skill {
+      margin-bottom: 15px;
+    }
+    .skill p {
+      margin-bottom: 5px;
+    }
+    .skill-bar {
+      background: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 15px;
+    }
+    .skill-bar div {
+      height: 100%;
+      background: #ff9800;
+      width: 0;
+      animation: fill 2s forwards;
+    }
+    @keyframes fill {
+      from { width: 0; }
+      to { width: 80%; } /* Example skill level */
+    }
+
+    /* ===== Projects ===== */
+    .project {
+      background: #1f1f1f;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+    }
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #ff9800;
+  color: #121212;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #00e7b1;
+  transform: translateY(-3px);
+}
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      color: #00e7b1;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ff9800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <img src="profile.jpg" alt="Yogesh K">
+    <h1>Yogesh K</h1>
+    <p>Electronics & Communication Engineer | IoT Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== About Me ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Yogesh, an aspiring Electronics & Communication Engineer with interests in IoT and automation projects. I love building smart systems that make life easier and learning new technologies along the way.</p>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <p>C, Python</p>
+      <div class="skill-bar"><div style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>IoT with ESP32</p>
+      <div class="skill-bar"><div style="width: 85%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>Embedded Systems & Automation</p>
+      <div class="skill-bar"><div style="width: 80%;"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+ <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Smart Attendance System</h3>
+    <p>RFID & Facial Recognition system to prevent proxy attendance using ESP32 and PC-based facial recognition.</p>
+    <a href="projects/attendance.pdf" class="btn" download>Download PDF</a>
+  </div>
+
+  <div class="project">
+    <h3>Industrial Robotic Arm</h3>
+    <p>IoT system for lifting objects from one place to another in real-time, controlled via phone or computer.</p>
+    <a href="projects/robotic_arm.pptx" class="btn" download>Download PPT</a>
+  </div>
+
+  <div class="project">
+    <h3>Smart Water Management System: Theory</h3>
+    <p>IoT project with gesture-controlled automation for efficient water usage at home.</p>
+    <a href="projects/water_system.pptx" class="btn" download>Download PPT</a>
+  </div>
+</section>
+
+  <!-- ===== Education ===== -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.E. Electronics and Communication Engineering</p>
+    <p>Knowledge Institute of Technology, Selam (2024 - 2028)</p>
+  </section>
+
+  <!-- ===== Certificate ===== -->
+   <section id="Certificate"
+      <h3>My Certificate</h3> 
+      <p></p>
+   <section>
+    
+   </section>
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href=""> yogi020607@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yogesh-k-bb9930339/" target="_blank"> linkedin.com/in/yogesh-k</a></p>
+    <p>GitHub: <a href="https://github.com/yogi-k0206" target="_blank"> github.com/yogi-k0206</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/_your_story_520/?hl=en" target="_blank"> instagram.com/_your_story_520</a></p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Yogesh | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
